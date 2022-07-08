@@ -1,14 +1,3 @@
 <app-header></app-header>
-<app-body></app-body>
-<div >
-  <div  class="d-flex mx-4 mt-4 w-96">
-    <!-- search harus di 1 component woyy!! -->
-    <input [disabled]="isDisabled"  [(ngModel)] = "searchValue" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success" (click)="onClick()" >Search</button>
-    <p class="mt-2"> {{date| date: 'dd/MMMM/yyyy'}}</p>
-  </div>
-  {{searchValue}}
-  <h3 [ngStyle]="{'font-style': 'italic','color' : 'red'}" class="text-center">List movie Terbaru</h3>
-  <app-movie (movieList)="getMovie($event)"></app-movie>
-</div>
+
 <router-outlet></router-outlet>
