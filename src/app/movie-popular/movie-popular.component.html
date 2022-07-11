@@ -1,10 +1,10 @@
-<div class="grow m-5 md:m-2">
+<h3 [ngStyle]="{'font-style': 'italic','color' : 'red'}" class="text-center mt-2">List movie Popular</h3>
+<div class="m-5  md:m-2 ">
 
-    <div class="grid grid-rows-4 grid-flow-col gap-4 md:grid grid-rows-6 grid-flow-col">
+    <div class="grid grid-rows-4 grid-flow-col gap-4  md:grid grid-rows-6 grid-flow-col">
         <div  *ngFor="let item of movie "  class="card rounded-xl ">
             {{item.original_title}} ({{item.release_date | date:"yyyy"}})
-            <img  src="https://image.tmdb.org/t/p/w220_and_h330_face{{item.poster_path}}" alt="" srcset="">
+            <img  class="max-w-xs max-h-96 md:max-w-xs max-h-96"src="https://image.tmdb.org/t/p/w220_and_h330_face{{item.poster_path}}" alt="" srcset="">
        </div>
     </div>
 </div>
-<router-outlet></router-outlet>
