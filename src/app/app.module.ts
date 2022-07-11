@@ -11,6 +11,8 @@ import { HeaderComponent } from './layout/header/header.component';
 import { MoviePopularComponent } from './movie-popular/movie-popular.component';
 import { MovieTopComponent } from './movie-top/movie-top.component';
 import { MovieUpComponent } from './movie-up/movie-up.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +21,7 @@ import { MovieUpComponent } from './movie-up/movie-up.component';
     MoviePopularComponent,
     MovieTopComponent,
     MovieUpComponent,
+    ContactUsComponent,
 
   ],
   imports: [
